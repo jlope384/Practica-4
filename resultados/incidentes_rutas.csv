@@ -1,0 +1,41 @@
+caso,politica,destino,ruta_ida,t_ida,ruta_regreso,t_regreso,desvio
+Red original,Actual,N08,N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08,59.0,N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01,59.0,False
+Red original,Actual,N19,N01 → N02 → N03 → N11 → N19,33.0,N19 → N11 → N03 → N02 → N01,33.0,False
+Red original,Actual,N34,N01 → N09 → N17 → N25 → N33 → N34,42.0,N34 → N33 → N25 → N17 → N09 → N01,42.0,False
+Red original,Actual,N40,N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08 → N16 → N24 → N32 → N40,93.0,N40 → N32 → N24 → N16 → N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01,93.0,False
+Red original,Dijkstra,N08,N01 → N09 → N10 → N11 → N13 → N22 → N23 → N07 → N08,51.0,N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01,59.0,False
+Red original,Dijkstra,N19,N01 → N02 → N18 → N19,18.0,N19 → N18 → N10 → N09 → N01,24.0,False
+Red original,Dijkstra,N34,N01 → N17 → N26 → N34,24.0,N34 → N26 → N25 → N17 → N09 → N01,34.0,False
+Red original,Dijkstra,N40,N01 → N17 → N25 → N27 → N29 → N31 → N32 → N40,47.0,N40 → N32 → N31 → N29 → N27 → N11 → N10 → N09 → N01,61.0,False
+Cierre N17→N25,Actual,N08,N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08,59.0,N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01,59.0,False
+Cierre N17→N25,Actual,N19,N01 → N02 → N03 → N11 → N19,33.0,N19 → N11 → N03 → N02 → N01,33.0,False
+Cierre N17→N25,Actual,N34,N01 → N09 → N17 → N26 → N34,31.0,N34 → N33 → N25 → N17 → N09 → N01,42.0,True
+Cierre N17→N25,Actual,N40,N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08 → N16 → N24 → N32 → N40,93.0,N40 → N32 → N24 → N16 → N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01,93.0,False
+Cierre N17→N25,Dijkstra,N08,N01 → N09 → N10 → N11 → N13 → N22 → N23 → N07 → N08,51.0,N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01,59.0,False
+Cierre N17→N25,Dijkstra,N19,N01 → N02 → N18 → N19,18.0,N19 → N18 → N10 → N09 → N01,24.0,False
+Cierre N17→N25,Dijkstra,N34,N01 → N17 → N26 → N34,24.0,N34 → N26 → N25 → N17 → N09 → N01,34.0,False
+Cierre N17→N25,Dijkstra,N40,N01 → N17 → N26 → N25 → N27 → N29 → N31 → N32 → N40,54.0,N40 → N32 → N31 → N29 → N27 → N11 → N10 → N09 → N01,61.0,False
+Cierre N03→N04,Actual,N08,N01 → N02 → N03 → N11 → N13 → N22 → N23 → N07 → N08,52.0,N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01,59.0,True
+Cierre N03→N04,Actual,N19,N01 → N02 → N03 → N11 → N19,33.0,N19 → N11 → N03 → N02 → N01,33.0,False
+Cierre N03→N04,Actual,N34,N01 → N09 → N17 → N25 → N33 → N34,42.0,N34 → N33 → N25 → N17 → N09 → N01,42.0,False
+Cierre N03→N04,Actual,N40,N01 → N02 → N03 → N11 → N13 → N22 → N23 → N24 → N32 → N40,58.0,N40 → N32 → N24 → N16 → N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01,93.0,True
+Cierre N03→N04,Dijkstra,N08,N01 → N09 → N10 → N11 → N13 → N22 → N23 → N07 → N08,51.0,N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01,59.0,False
+Cierre N03→N04,Dijkstra,N19,N01 → N02 → N18 → N19,18.0,N19 → N18 → N10 → N09 → N01,24.0,False
+Cierre N03→N04,Dijkstra,N34,N01 → N17 → N26 → N34,24.0,N34 → N26 → N25 → N17 → N09 → N01,34.0,False
+Cierre N03→N04,Dijkstra,N40,N01 → N17 → N25 → N27 → N29 → N31 → N32 → N40,47.0,N40 → N32 → N31 → N29 → N27 → N11 → N10 → N09 → N01,61.0,False
+Congestión N02→N18 (5→15 min),Actual,N08,N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08,59.0,N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01,59.0,False
+Congestión N02→N18 (5→15 min),Actual,N19,N01 → N02 → N03 → N11 → N19,33.0,N19 → N11 → N03 → N02 → N01,33.0,False
+Congestión N02→N18 (5→15 min),Actual,N34,N01 → N09 → N17 → N25 → N33 → N34,42.0,N34 → N33 → N25 → N17 → N09 → N01,42.0,False
+Congestión N02→N18 (5→15 min),Actual,N40,N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08 → N16 → N24 → N32 → N40,93.0,N40 → N32 → N24 → N16 → N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01,93.0,False
+Congestión N02→N18 (5→15 min),Dijkstra,N08,N01 → N09 → N10 → N11 → N13 → N22 → N23 → N07 → N08,51.0,N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01,59.0,False
+Congestión N02→N18 (5→15 min),Dijkstra,N19,N01 → N17 → N18 → N19,20.0,N19 → N18 → N10 → N09 → N01,24.0,False
+Congestión N02→N18 (5→15 min),Dijkstra,N34,N01 → N17 → N26 → N34,24.0,N34 → N26 → N25 → N17 → N09 → N01,34.0,False
+Congestión N02→N18 (5→15 min),Dijkstra,N40,N01 → N17 → N25 → N27 → N29 → N31 → N32 → N40,47.0,N40 → N32 → N31 → N29 → N27 → N11 → N10 → N09 → N01,61.0,False
+Cierre N29→N31 y N27→N29,Actual,N08,N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08,59.0,N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01,59.0,False
+Cierre N29→N31 y N27→N29,Actual,N19,N01 → N02 → N03 → N11 → N19,33.0,N19 → N11 → N03 → N02 → N01,33.0,False
+Cierre N29→N31 y N27→N29,Actual,N34,N01 → N09 → N17 → N25 → N33 → N34,42.0,N34 → N33 → N25 → N17 → N09 → N01,42.0,False
+Cierre N29→N31 y N27→N29,Actual,N40,N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08 → N16 → N24 → N32 → N40,93.0,N40 → N32 → N24 → N16 → N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01,93.0,False
+Cierre N29→N31 y N27→N29,Dijkstra,N08,N01 → N09 → N10 → N11 → N13 → N22 → N23 → N07 → N08,51.0,N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01,59.0,False
+Cierre N29→N31 y N27→N29,Dijkstra,N19,N01 → N02 → N18 → N19,18.0,N19 → N18 → N10 → N09 → N01,24.0,False
+Cierre N29→N31 y N27→N29,Dijkstra,N34,N01 → N17 → N26 → N34,24.0,N34 → N26 → N25 → N17 → N09 → N01,34.0,False
+Cierre N29→N31 y N27→N29,Dijkstra,N40,N01 → N09 → N10 → N11 → N13 → N22 → N23 → N24 → N32 → N40,57.0,N40 → N32 → N31 → N29 → N27 → N11 → N10 → N09 → N01,61.0,False

@@ -1,0 +1,4 @@
+escenario,tasa,ciclo_medio_actual,ciclo_medio_dijkstra,rho_actual_8veh,rho_dijkstra_8veh,veh_min_actual,veh_min_dijkstra
+Normal,4.0,113.5,79.5,0.9458333333333333,0.6625,8,6
+Semana Santa,6.0,113.5,79.5,1.41875,0.99375,12,8
+Navidad,10.0,113.5,79.5,2.3645833333333335,1.65625,19,14

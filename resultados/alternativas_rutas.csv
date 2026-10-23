@@ -1,0 +1,41 @@
+destino,sentido,opcion,ruta,tiempo_min,dif_vs_actual
+N08,Ida,Actual,N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08,59.0,0.0
+N08,Ida,Dijkstra (óptima),N01 → N09 → N10 → N11 → N13 → N22 → N23 → N07 → N08,51.0,-8.0
+N08,Ida,Alternativa 2 (Yen),N01 → N02 → N03 → N11 → N13 → N22 → N23 → N07 → N08,52.0,-7.0
+N08,Ida,Alternativa 3 (Yen),N01 → N09 → N10 → N11 → N13 → N22 → N23 → N16 → N08,54.0,-5.0
+N08,Ida,Alternativa 4 (Yen),N01 → N02 → N03 → N11 → N13 → N22 → N23 → N16 → N08,55.0,-4.0
+N08,Regreso,Actual,N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01,59.0,0.0
+N08,Regreso,Alternativa 1 (= actual),N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01,59.0,0.0
+N08,Regreso,Alternativa 2 (Yen),N08 → N07 → N06 → N05 → N12 → N03 → N02 → N01,59.0,0.0
+N08,Regreso,Alternativa 3 (Yen),N08 → N07 → N23 → N22 → N29 → N27 → N11 → N10 → N09 → N01,62.0,3.0
+N08,Regreso,Alternativa 4 (Yen),N08 → N07 → N06 → N14 → N05 → N04 → N03 → N02 → N01,63.0,4.0
+N19,Ida,Actual,N01 → N02 → N03 → N11 → N19,33.0,0.0
+N19,Ida,Dijkstra (óptima),N01 → N02 → N18 → N19,18.0,-15.0
+N19,Ida,Alternativa 2 (Yen),N01 → N17 → N18 → N19,20.0,-13.0
+N19,Ida,Alternativa 3 (Yen),N01 → N09 → N10 → N18 → N19,24.0,-9.0
+N19,Ida,Alternativa 4 (Yen),N01 → N09 → N17 → N18 → N19,27.0,-6.0
+N19,Regreso,Actual,N19 → N11 → N03 → N02 → N01,33.0,0.0
+N19,Regreso,Dijkstra (óptima),N19 → N18 → N10 → N09 → N01,24.0,-9.0
+N19,Regreso,Alternativa 2 (Yen),N19 → N18 → N17 → N09 → N01,27.0,-6.0
+N19,Regreso,Alternativa 3 (Yen),N19 → N11 → N10 → N09 → N01,32.0,-1.0
+N19,Regreso,Alternativa 4 (= actual),N19 → N11 → N03 → N02 → N01,33.0,0.0
+N34,Ida,Actual,N01 → N09 → N17 → N25 → N33 → N34,42.0,0.0
+N34,Ida,Dijkstra (óptima),N01 → N17 → N26 → N34,24.0,-18.0
+N34,Ida,Alternativa 2 (Yen),N01 → N02 → N18 → N26 → N34,24.0,-18.0
+N34,Ida,Alternativa 3 (Yen),N01 → N17 → N18 → N26 → N34,26.0,-16.0
+N34,Ida,Alternativa 4 (Yen),N01 → N17 → N25 → N26 → N34,27.0,-15.0
+N34,Regreso,Actual,N34 → N33 → N25 → N17 → N09 → N01,42.0,0.0
+N34,Regreso,Dijkstra (óptima),N34 → N26 → N25 → N17 → N09 → N01,34.0,-8.0
+N34,Regreso,Alternativa 2 (Yen),N34 → N26 → N33 → N25 → N17 → N09 → N01,42.0,0.0
+N34,Regreso,Alternativa 3 (= actual),N34 → N33 → N25 → N17 → N09 → N01,42.0,0.0
+N34,Regreso,Alternativa 4 (Yen),N34 → N26 → N25 → N17 → N18 → N10 → N09 → N01,43.0,1.0
+N40,Ida,Actual,N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08 → N16 → N24 → N32 → N40,93.0,0.0
+N40,Ida,Dijkstra (óptima),N01 → N17 → N25 → N27 → N29 → N31 → N32 → N40,47.0,-46.0
+N40,Ida,Alternativa 2 (Yen),N01 → N17 → N25 → N27 → N29 → N31 → N39 → N40,51.0,-42.0
+N40,Ida,Alternativa 3 (Yen),N01 → N09 → N17 → N25 → N27 → N29 → N31 → N32 → N40,54.0,-39.0
+N40,Ida,Alternativa 4 (Yen),N01 → N02 → N18 → N26 → N25 → N27 → N29 → N31 → N32 → N40,54.0,-39.0
+N40,Regreso,Actual,N40 → N32 → N24 → N16 → N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01,93.0,0.0
+N40,Regreso,Dijkstra (óptima),N40 → N32 → N31 → N29 → N27 → N11 → N10 → N09 → N01,61.0,-32.0
+N40,Regreso,Alternativa 2 (Yen),N40 → N39 → N38 → N37 → N29 → N27 → N11 → N10 → N09 → N01,61.0,-32.0
+N40,Regreso,Alternativa 3 (Yen),N40 → N32 → N31 → N29 → N27 → N11 → N03 → N02 → N01,62.0,-31.0
+N40,Regreso,Alternativa 4 (Yen),N40 → N39 → N38 → N37 → N29 → N27 → N11 → N03 → N02 → N01,62.0,-31.0

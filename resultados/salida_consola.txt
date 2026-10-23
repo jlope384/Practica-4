@@ -1,0 +1,175 @@
+Nodos: 40  arcos dirigidos: 144
+  tramos doble sentido mismo tiempo: 49, distinto tiempo: 14, un sentido: 18
+  destino  sentido                                                                   ruta  tramos valida tramos_inexistentes                                        detalle  tiempo_min
+0     N08      Ida                          N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08       7     Sí                   -                    8 + 8 + 9 + 10 + 10 + 7 + 7        59.0
+1     N08  Regreso                          N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01       7     Sí                   -                    7 + 7 + 10 + 10 + 9 + 8 + 8        59.0
+2     N19      Ida                                            N01 → N02 → N03 → N11 → N19       4     Sí                   -                                  8 + 8 + 8 + 9        33.0
+3     N19  Regreso                                            N19 → N11 → N03 → N02 → N01       4     Sí                   -                                  9 + 8 + 8 + 8        33.0
+4     N34      Ida                                      N01 → N09 → N17 → N25 → N33 → N34       5     Sí                   -                             7 + 9 + 8 + 8 + 10        42.0
+5     N34  Regreso                                      N34 → N33 → N25 → N17 → N09 → N01       5     Sí                   -                             10 + 8 + 8 + 9 + 7        42.0
+6     N40      Ida  N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08 → N16 → N24 → N32 → N40      11     Sí                   -  8 + 8 + 9 + 10 + 10 + 7 + 7 + 10 + 10 + 6 + 8        93.0
+7     N40  Regreso  N40 → N32 → N24 → N16 → N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01      11     Sí                   -  8 + 6 + 10 + 10 + 7 + 7 + 10 + 10 + 9 + 8 + 8        93.0
+   destino  sentido                    opcion                                                                   ruta  tiempo_min  dif_vs_actual
+0      N08      Ida                    Actual                          N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08        59.0            0.0
+1      N08      Ida         Dijkstra (óptima)                    N01 → N09 → N10 → N11 → N13 → N22 → N23 → N07 → N08        51.0           -8.0
+2      N08      Ida       Alternativa 2 (Yen)                    N01 → N02 → N03 → N11 → N13 → N22 → N23 → N07 → N08        52.0           -7.0
+3      N08      Ida       Alternativa 3 (Yen)                    N01 → N09 → N10 → N11 → N13 → N22 → N23 → N16 → N08        54.0           -5.0
+4      N08      Ida       Alternativa 4 (Yen)                    N01 → N02 → N03 → N11 → N13 → N22 → N23 → N16 → N08        55.0           -4.0
+5      N08  Regreso                    Actual                          N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01        59.0            0.0
+6      N08  Regreso  Alternativa 1 (= actual)                          N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01        59.0            0.0
+7      N08  Regreso       Alternativa 2 (Yen)                          N08 → N07 → N06 → N05 → N12 → N03 → N02 → N01        59.0            0.0
+8      N08  Regreso       Alternativa 3 (Yen)              N08 → N07 → N23 → N22 → N29 → N27 → N11 → N10 → N09 → N01        62.0            3.0
+9      N08  Regreso       Alternativa 4 (Yen)                    N08 → N07 → N06 → N14 → N05 → N04 → N03 → N02 → N01        63.0            4.0
+10     N19      Ida                    Actual                                            N01 → N02 → N03 → N11 → N19        33.0            0.0
+11     N19      Ida         Dijkstra (óptima)                                                  N01 → N02 → N18 → N19        18.0          -15.0
+12     N19      Ida       Alternativa 2 (Yen)                                                  N01 → N17 → N18 → N19        20.0          -13.0
+13     N19      Ida       Alternativa 3 (Yen)                                            N01 → N09 → N10 → N18 → N19        24.0           -9.0
+14     N19      Ida       Alternativa 4 (Yen)                                            N01 → N09 → N17 → N18 → N19        27.0           -6.0
+15     N19  Regreso                    Actual                                            N19 → N11 → N03 → N02 → N01        33.0            0.0
+16     N19  Regreso         Dijkstra (óptima)                                            N19 → N18 → N10 → N09 → N01        24.0           -9.0
+17     N19  Regreso       Alternativa 2 (Yen)                                            N19 → N18 → N17 → N09 → N01        27.0           -6.0
+18     N19  Regreso       Alternativa 3 (Yen)                                            N19 → N11 → N10 → N09 → N01        32.0           -1.0
+19     N19  Regreso  Alternativa 4 (= actual)                                            N19 → N11 → N03 → N02 → N01        33.0            0.0
+20     N34      Ida                    Actual                                      N01 → N09 → N17 → N25 → N33 → N34        42.0            0.0
+21     N34      Ida         Dijkstra (óptima)                                                  N01 → N17 → N26 → N34        24.0          -18.0
+22     N34      Ida       Alternativa 2 (Yen)                                            N01 → N02 → N18 → N26 → N34        24.0          -18.0
+23     N34      Ida       Alternativa 3 (Yen)                                            N01 → N17 → N18 → N26 → N34        26.0          -16.0
+24     N34      Ida       Alternativa 4 (Yen)                                            N01 → N17 → N25 → N26 → N34        27.0          -15.0
+25     N34  Regreso                    Actual                                      N34 → N33 → N25 → N17 → N09 → N01        42.0            0.0
+26     N34  Regreso         Dijkstra (óptima)                                      N34 → N26 → N25 → N17 → N09 → N01        34.0           -8.0
+27     N34  Regreso       Alternativa 2 (Yen)                                N34 → N26 → N33 → N25 → N17 → N09 → N01        42.0            0.0
+28     N34  Regreso  Alternativa 3 (= actual)                                      N34 → N33 → N25 → N17 → N09 → N01        42.0            0.0
+29     N34  Regreso       Alternativa 4 (Yen)                          N34 → N26 → N25 → N17 → N18 → N10 → N09 → N01        43.0            1.0
+30     N40      Ida                    Actual  N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08 → N16 → N24 → N32 → N40        93.0            0.0
+31     N40      Ida         Dijkstra (óptima)                          N01 → N17 → N25 → N27 → N29 → N31 → N32 → N40        47.0          -46.0
+32     N40      Ida       Alternativa 2 (Yen)                          N01 → N17 → N25 → N27 → N29 → N31 → N39 → N40        51.0          -42.0
+33     N40      Ida       Alternativa 3 (Yen)                    N01 → N09 → N17 → N25 → N27 → N29 → N31 → N32 → N40        54.0          -39.0
+34     N40      Ida       Alternativa 4 (Yen)              N01 → N02 → N18 → N26 → N25 → N27 → N29 → N31 → N32 → N40        54.0          -39.0
+35     N40  Regreso                    Actual  N40 → N32 → N24 → N16 → N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01        93.0            0.0
+36     N40  Regreso         Dijkstra (óptima)                    N40 → N32 → N31 → N29 → N27 → N11 → N10 → N09 → N01        61.0          -32.0
+37     N40  Regreso       Alternativa 2 (Yen)              N40 → N39 → N38 → N37 → N29 → N27 → N11 → N10 → N09 → N01        61.0          -32.0
+38     N40  Regreso       Alternativa 3 (Yen)                    N40 → N32 → N31 → N29 → N27 → N11 → N03 → N02 → N01        62.0          -31.0
+39     N40  Regreso       Alternativa 4 (Yen)              N40 → N39 → N38 → N37 → N29 → N27 → N11 → N03 → N02 → N01        62.0          -31.0
+  destino  ida_actual  ida_dijkstra  reg_actual  reg_dijkstra  ciclo_actual  ciclo_dijkstra                                    ruta_ida_dijkstra                                    ruta_reg_dijkstra  ahorro_ciclo  ahorro_pct
+0     N08        59.0          51.0        59.0          59.0         118.0           110.0  N01 → N09 → N10 → N11 → N13 → N22 → N23 → N07 → N08        N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01           8.0    6.779661
+1     N19        33.0          18.0        33.0          24.0          66.0            42.0                                N01 → N02 → N18 → N19                          N19 → N18 → N10 → N09 → N01          24.0   36.363636
+2     N34        42.0          24.0        42.0          34.0          84.0            58.0                                N01 → N17 → N26 → N34                    N34 → N26 → N25 → N17 → N09 → N01          26.0   30.952381
+3     N40        93.0          47.0        93.0          61.0         186.0           108.0        N01 → N17 → N25 → N27 → N29 → N31 → N32 → N40  N40 → N32 → N31 → N29 → N27 → N11 → N10 → N09 → N01          78.0   41.935484
+       par  costo_dijkstra  costo_astar  costo_bellman_ford  nodos_expandidos_dijkstra  nodos_expandidos_astar  relajaciones_bf  us_dijkstra  us_astar  us_bellman_ford  us_floyd_warshall_todos_pares
+0  N01→N08            51.0         51.0                51.0                         39                      29              432        28.99     79.87            72.38                        2723.42
+1  N08→N01            59.0         59.0                59.0                         40                      34             1008        31.72     83.78           160.70                            NaN
+2  N01→N19            18.0         18.0                18.0                          9                       5              432         8.13     54.87            68.36                            NaN
+3  N19→N01            24.0         24.0                24.0                         21                       7              720        16.99     57.31           113.53                            NaN
+4  N01→N34            24.0         24.0                24.0                         15                       7              432        12.36     56.58            72.51                            NaN
+5  N34→N01            34.0         34.0                34.0                         26                       8              864        22.48     58.79           139.90                            NaN
+6  N01→N40            47.0         47.0                47.0                         37                      18              432        39.45     67.18            73.19                            NaN
+7  N40→N01            61.0         61.0                61.0                         40                      39             1296        29.88     74.46           187.86                            NaN
+      escenario  tasa  ciclo_medio_actual  ciclo_medio_dijkstra  rho_actual_8veh  rho_dijkstra_8veh  veh_min_actual  veh_min_dijkstra
+0        Normal   4.0               113.5                  79.5            0.946              0.662               8                 6
+1  Semana Santa   6.0               113.5                  79.5            1.419              0.994              12                 8
+2       Navidad  10.0               113.5                  79.5            2.365              1.656              19                14
+      escenario  politica  pedidos  pedidos_ic95  puntuales  puntuales_ic95  pct_puntual  pct_puntual_ic95  espera_prom  espera_prom_ic95  sistema_prom  sistema_prom_ic95  utilizacion  utilizacion_ic95  tiempo_extra  tiempo_extra_ic95
+0        Normal    Actual     31.9          4.50       17.2            3.89        57.05             16.64        19.43             16.46         75.01              16.26        66.82              7.44        179.08              32.17
+1        Normal  Dijkstra     31.9          4.50       31.1            4.65        97.65              5.32         2.98              4.47         37.15               4.78        54.63              7.94         86.82              17.72
+2  Semana Santa    Actual     46.9          6.19       12.3            4.08        28.62             14.44        82.80             32.00        138.36              33.02        81.51              6.72        314.40              65.96
+3  Semana Santa  Dijkstra     46.9          6.19       33.9            6.55        75.34             17.67        21.56             12.99         55.31              13.01        75.58              7.48        112.65              32.05
+4       Navidad    Actual     80.6          7.44        8.0            2.57        10.41              4.42       285.71             57.46        341.89              58.40        92.29              1.50        748.05             121.37
+5       Navidad  Dijkstra     80.6          7.44       19.0            5.80        24.60              9.90       136.59             35.83        171.16              35.90        90.46              2.16        393.25              71.88
+       escenario                        metrica  dif_media  ic95_inf  ic95_sup  p_valor
+0         Normal             Entregas puntuales     13.900     7.322    20.478    0.001
+1         Normal                      % puntual     40.600    25.915    55.286    0.000
+2         Normal             Espera prom. (min)    -16.444   -29.947    -2.941    0.022
+3         Normal  Solicitud→entrega prom. (min)    -37.866   -51.427   -24.306    0.000
+4         Normal                Utilización (%)    -12.191   -14.911    -9.470    0.000
+5         Normal             Tiempo extra (min)    -92.254  -125.029   -59.479    0.000
+6   Semana Santa             Entregas puntuales     21.600    14.541    28.659    0.000
+7   Semana Santa                      % puntual     46.723    30.898    62.548    0.000
+8   Semana Santa             Espera prom. (min)    -61.234   -82.491   -39.977    0.000
+9   Semana Santa  Solicitud→entrega prom. (min)    -83.054  -105.461   -60.647    0.000
+10  Semana Santa                Utilización (%)     -5.925    -7.679    -4.170    0.000
+11  Semana Santa             Tiempo extra (min)   -201.745  -239.030  -164.460    0.000
+12       Navidad             Entregas puntuales     11.000     7.321    14.679    0.000
+13       Navidad                      % puntual     14.184     8.268    20.100    0.000
+14       Navidad             Espera prom. (min)   -149.119  -172.999  -125.238    0.000
+15       Navidad  Solicitud→entrega prom. (min)   -170.731  -195.737  -145.724    0.000
+16       Navidad                Utilización (%)     -1.826    -3.952     0.300    0.084
+17       Navidad             Tiempo extra (min)   -354.796  -409.295  -300.297    0.000
+      escenario  politica  pedidos  pedidos_ic95  puntuales  puntuales_ic95  pct_puntual  pct_puntual_ic95  espera_prom  espera_prom_ic95  sistema_prom  sistema_prom_ic95  utilizacion  utilizacion_ic95  tiempo_extra  tiempo_extra_ic95
+0        Normal    Actual     31.9          4.50       16.2            3.86        54.24             17.49        23.82             20.02         85.16              20.02        68.22              7.41        200.00              38.95
+1        Normal  Dijkstra     31.9          4.50       29.5            3.92        93.45              8.71         4.54              5.74         44.14               5.79        58.03              8.67         92.05              18.49
+2  Semana Santa    Actual     46.9          6.19       11.0            4.40        26.38             16.29        95.61             36.53        157.08              37.78        82.89              6.52        343.15              70.70
+3  Semana Santa  Dijkstra     46.9          6.19       30.2            6.69        67.81             18.60        29.53             17.28         68.79              17.55        78.40              7.49        132.72              40.81
+4       Navidad    Actual     80.6          7.44        7.0            2.19         9.07              3.76       311.38             61.25        372.87              62.10        91.99              1.49        807.14             123.85
+5       Navidad  Dijkstra     80.6          7.44       15.6            4.35        20.13              7.58       159.79             39.81        199.55              39.84        90.77              2.15        445.07              76.57
+                             caso  politica destino                                                               ruta_ida  t_ida                                                           ruta_regreso  t_regreso  desvio
+0                    Red original    Actual     N08                          N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08   59.0                          N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01       59.0   False
+1                    Red original    Actual     N19                                            N01 → N02 → N03 → N11 → N19   33.0                                            N19 → N11 → N03 → N02 → N01       33.0   False
+2                    Red original    Actual     N34                                      N01 → N09 → N17 → N25 → N33 → N34   42.0                                      N34 → N33 → N25 → N17 → N09 → N01       42.0   False
+3                    Red original    Actual     N40  N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08 → N16 → N24 → N32 → N40   93.0  N40 → N32 → N24 → N16 → N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01       93.0   False
+4                    Red original  Dijkstra     N08                    N01 → N09 → N10 → N11 → N13 → N22 → N23 → N07 → N08   51.0                          N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01       59.0   False
+5                    Red original  Dijkstra     N19                                                  N01 → N02 → N18 → N19   18.0                                            N19 → N18 → N10 → N09 → N01       24.0   False
+6                    Red original  Dijkstra     N34                                                  N01 → N17 → N26 → N34   24.0                                      N34 → N26 → N25 → N17 → N09 → N01       34.0   False
+7                    Red original  Dijkstra     N40                          N01 → N17 → N25 → N27 → N29 → N31 → N32 → N40   47.0                    N40 → N32 → N31 → N29 → N27 → N11 → N10 → N09 → N01       61.0   False
+8                  Cierre N17→N25    Actual     N08                          N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08   59.0                          N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01       59.0   False
+9                  Cierre N17→N25    Actual     N19                                            N01 → N02 → N03 → N11 → N19   33.0                                            N19 → N11 → N03 → N02 → N01       33.0   False
+10                 Cierre N17→N25    Actual     N34                                            N01 → N09 → N17 → N26 → N34   31.0                                      N34 → N33 → N25 → N17 → N09 → N01       42.0    True
+11                 Cierre N17→N25    Actual     N40  N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08 → N16 → N24 → N32 → N40   93.0  N40 → N32 → N24 → N16 → N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01       93.0   False
+12                 Cierre N17→N25  Dijkstra     N08                    N01 → N09 → N10 → N11 → N13 → N22 → N23 → N07 → N08   51.0                          N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01       59.0   False
+13                 Cierre N17→N25  Dijkstra     N19                                                  N01 → N02 → N18 → N19   18.0                                            N19 → N18 → N10 → N09 → N01       24.0   False
+14                 Cierre N17→N25  Dijkstra     N34                                                  N01 → N17 → N26 → N34   24.0                                      N34 → N26 → N25 → N17 → N09 → N01       34.0   False
+15                 Cierre N17→N25  Dijkstra     N40                    N01 → N17 → N26 → N25 → N27 → N29 → N31 → N32 → N40   54.0                    N40 → N32 → N31 → N29 → N27 → N11 → N10 → N09 → N01       61.0   False
+16                 Cierre N03→N04    Actual     N08                    N01 → N02 → N03 → N11 → N13 → N22 → N23 → N07 → N08   52.0                          N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01       59.0    True
+17                 Cierre N03→N04    Actual     N19                                            N01 → N02 → N03 → N11 → N19   33.0                                            N19 → N11 → N03 → N02 → N01       33.0   False
+18                 Cierre N03→N04    Actual     N34                                      N01 → N09 → N17 → N25 → N33 → N34   42.0                                      N34 → N33 → N25 → N17 → N09 → N01       42.0   False
+19                 Cierre N03→N04    Actual     N40              N01 → N02 → N03 → N11 → N13 → N22 → N23 → N24 → N32 → N40   58.0  N40 → N32 → N24 → N16 → N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01       93.0    True
+20                 Cierre N03→N04  Dijkstra     N08                    N01 → N09 → N10 → N11 → N13 → N22 → N23 → N07 → N08   51.0                          N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01       59.0   False
+21                 Cierre N03→N04  Dijkstra     N19                                                  N01 → N02 → N18 → N19   18.0                                            N19 → N18 → N10 → N09 → N01       24.0   False
+22                 Cierre N03→N04  Dijkstra     N34                                                  N01 → N17 → N26 → N34   24.0                                      N34 → N26 → N25 → N17 → N09 → N01       34.0   False
+23                 Cierre N03→N04  Dijkstra     N40                          N01 → N17 → N25 → N27 → N29 → N31 → N32 → N40   47.0                    N40 → N32 → N31 → N29 → N27 → N11 → N10 → N09 → N01       61.0   False
+24  Congestión N02→N18 (5→15 min)    Actual     N08                          N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08   59.0                          N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01       59.0   False
+25  Congestión N02→N18 (5→15 min)    Actual     N19                                            N01 → N02 → N03 → N11 → N19   33.0                                            N19 → N11 → N03 → N02 → N01       33.0   False
+26  Congestión N02→N18 (5→15 min)    Actual     N34                                      N01 → N09 → N17 → N25 → N33 → N34   42.0                                      N34 → N33 → N25 → N17 → N09 → N01       42.0   False
+27  Congestión N02→N18 (5→15 min)    Actual     N40  N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08 → N16 → N24 → N32 → N40   93.0  N40 → N32 → N24 → N16 → N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01       93.0   False
+28  Congestión N02→N18 (5→15 min)  Dijkstra     N08                    N01 → N09 → N10 → N11 → N13 → N22 → N23 → N07 → N08   51.0                          N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01       59.0   False
+29  Congestión N02→N18 (5→15 min)  Dijkstra     N19                                                  N01 → N17 → N18 → N19   20.0                                            N19 → N18 → N10 → N09 → N01       24.0   False
+30  Congestión N02→N18 (5→15 min)  Dijkstra     N34                                                  N01 → N17 → N26 → N34   24.0                                      N34 → N26 → N25 → N17 → N09 → N01       34.0   False
+31  Congestión N02→N18 (5→15 min)  Dijkstra     N40                          N01 → N17 → N25 → N27 → N29 → N31 → N32 → N40   47.0                    N40 → N32 → N31 → N29 → N27 → N11 → N10 → N09 → N01       61.0   False
+32       Cierre N29→N31 y N27→N29    Actual     N08                          N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08   59.0                          N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01       59.0   False
+33       Cierre N29→N31 y N27→N29    Actual     N19                                            N01 → N02 → N03 → N11 → N19   33.0                                            N19 → N11 → N03 → N02 → N01       33.0   False
+34       Cierre N29→N31 y N27→N29    Actual     N34                                      N01 → N09 → N17 → N25 → N33 → N34   42.0                                      N34 → N33 → N25 → N17 → N09 → N01       42.0   False
+35       Cierre N29→N31 y N27→N29    Actual     N40  N01 → N02 → N03 → N04 → N05 → N06 → N07 → N08 → N16 → N24 → N32 → N40   93.0  N40 → N32 → N24 → N16 → N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01       93.0   False
+36       Cierre N29→N31 y N27→N29  Dijkstra     N08                    N01 → N09 → N10 → N11 → N13 → N22 → N23 → N07 → N08   51.0                          N08 → N07 → N06 → N05 → N04 → N03 → N02 → N01       59.0   False
+37       Cierre N29→N31 y N27→N29  Dijkstra     N19                                                  N01 → N02 → N18 → N19   18.0                                            N19 → N18 → N10 → N09 → N01       24.0   False
+38       Cierre N29→N31 y N27→N29  Dijkstra     N34                                                  N01 → N17 → N26 → N34   24.0                                      N34 → N26 → N25 → N17 → N09 → N01       34.0   False
+39       Cierre N29→N31 y N27→N29  Dijkstra     N40              N01 → N09 → N10 → N11 → N13 → N22 → N23 → N24 → N32 → N40   57.0                    N40 → N32 → N31 → N29 → N27 → N11 → N10 → N09 → N01       61.0   False
+                             caso  politica     escenario  pedidos  puntuales  pct_puntual  espera_prom  sistema_prom  utilizacion  tiempo_extra
+0                    Red original    Actual        Normal     31.9       17.2         57.0         19.4          75.0         66.8         179.1
+1                    Red original    Actual  Semana Santa     46.9       12.3         28.6         82.8         138.4         81.5         314.4
+2                    Red original    Actual       Navidad     80.6        8.0         10.4        285.7         341.9         92.3         748.0
+3                    Red original  Dijkstra        Normal     31.9       31.1         97.6          3.0          37.1         54.6          86.8
+4                    Red original  Dijkstra  Semana Santa     46.9       33.9         75.3         21.6          55.3         75.6         112.7
+5                    Red original  Dijkstra       Navidad     80.6       19.0         24.6        136.6         171.2         90.5         393.3
+6                  Cierre N17→N25    Actual        Normal     31.9       17.8         58.6         17.5          70.6         65.7         175.7
+7                  Cierre N17→N25    Actual  Semana Santa     46.9       13.9         31.9         76.8         129.7         80.8         301.7
+8                  Cierre N17→N25    Actual       Navidad     80.6        8.9         11.5        273.3         327.0         91.9         727.0
+9                  Cierre N17→N25  Dijkstra        Normal     31.9       31.0         97.4          3.2          39.0         55.4          91.0
+10                 Cierre N17→N25  Dijkstra  Semana Santa     46.9       32.2         71.8         23.8          59.2         76.1         122.2
+11                 Cierre N17→N25  Dijkstra       Navidad     80.6       17.7         22.9        143.8         180.1         90.6         410.8
+12                 Cierre N03→N04    Actual        Normal     31.9       24.1         79.0         13.8          59.3         65.3         135.3
+13                 Cierre N03→N04    Actual  Semana Santa     46.9       18.1         41.9         64.1         109.5         82.0         237.7
+14                 Cierre N03→N04    Actual       Navidad     80.6       10.6         13.7        243.2         289.0         92.0         636.9
+15                 Cierre N03→N04  Dijkstra        Normal     31.9       31.1         97.6          3.0          37.1         54.6          86.8
+16                 Cierre N03→N04  Dijkstra  Semana Santa     46.9       33.9         75.3         21.6          55.3         75.6         112.7
+17                 Cierre N03→N04  Dijkstra       Navidad     80.6       19.0         24.6        136.6         171.2         90.5         393.3
+18  Congestión N02→N18 (5→15 min)    Actual        Normal     31.9       17.2         57.0         19.4          75.0         66.8         179.1
+19  Congestión N02→N18 (5→15 min)    Actual  Semana Santa     46.9       12.3         28.6         82.8         138.4         81.5         314.4
+20  Congestión N02→N18 (5→15 min)    Actual       Navidad     80.6        8.0         10.4        285.7         341.9         92.3         748.0
+21  Congestión N02→N18 (5→15 min)  Dijkstra        Normal     31.9       30.9         97.1          3.1          37.9         55.0          87.0
+22  Congestión N02→N18 (5→15 min)  Dijkstra  Semana Santa     46.9       33.5         74.5         22.4          56.7         76.0         113.6
+23  Congestión N02→N18 (5→15 min)  Dijkstra       Navidad     80.6       18.3         23.6        139.2         174.3         90.6         397.8
+24       Cierre N29→N31 y N27→N29    Actual        Normal     31.9       17.2         57.0         19.4          75.0         66.8         179.1
+25       Cierre N29→N31 y N27→N29    Actual  Semana Santa     46.9       12.3         28.6         82.8         138.4         81.5         314.4
+26       Cierre N29→N31 y N27→N29    Actual       Navidad     80.6        8.0         10.4        285.7         341.9         92.3         748.0
+27       Cierre N29→N31 y N27→N29  Dijkstra        Normal     31.9       30.9         97.0          3.3          39.8         55.7          93.0
+28       Cierre N29→N31 y N27→N29  Dijkstra  Semana Santa     46.9       31.6         70.6         24.8          61.0         76.2         127.0
+29       Cierre N29→N31 y N27→N29  Dijkstra       Navidad     80.6       17.4         22.5        146.9         184.0         90.7         418.2
